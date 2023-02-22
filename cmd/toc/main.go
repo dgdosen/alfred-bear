@@ -42,7 +42,7 @@ func main() {
 			header := strings.TrimLeft(l, "# ")
 			escaped := url.PathEscape(header)
 			callback := fmt.Sprintf(
-				"bear://x-callback-url/open-note?id=%s&header=%s&show_window=yes&new_window=yes", noteID, escaped)
+				"bear2://x-callback-url/open-note?id=%s&header=%s&show_window=yes&new_window=yes", noteID, escaped)
 
 			header = strings.ReplaceAll(header, "[", "- ")
 			header = strings.ReplaceAll(header, "]", " -")

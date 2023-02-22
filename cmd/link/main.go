@@ -18,7 +18,7 @@ func main() {
 		panic(err)
 	}
 
-	callback := fmt.Sprintf("bear://x-callback-url/open-note?id=%s&show_window=yes&new_window=yes", noteID)
+	callback := fmt.Sprintf("bear2://x-callback-url/open-note?id=%s&show_window=yes&new_window=yes", noteID)
 	rows, err := litedb.Query(fmt.Sprintf(db.NOTE_TITLE_BY_ID, noteID))
 	if err != nil {
 		panic(err)
